@@ -44,6 +44,44 @@ README.md
 You must edit the config file **cfgfile.cfg** and change the varibales value to fit your website information **Please note** that this file is bash file and not 
 a real config file, so when changing variables values make sure to follow bash rules. NO space between var and val also no empty lines at the end of lines.
 
+This is the cfgfile.cfg sample content
+
+```
+#kdbackup config file
+#Please note that this file is bash file and not a real config gile
+#so when changing variables values make sure to follow bash rules
+#no space between var and val also no empty lines at the end of lines
+#
+#I know this file is insecure as a config file, but this projects is small projects and done to be used by superusers
+#
+#contents folder
+#the folder that you want to backp , example /home/mshannaq/public_html
+cfg_contents_folder="/path/to/public_html/"
+#
+#
+#
+#dump mysql database? 1 yes , 0 no
+cfg_mysqldump=1
+#
+#mysql database name
+cfg_mysql_databasename=databasename
+#mysql database username
+cfg_mysql_databaseusername=user
+#mysql database username password
+cfg_mysql_databaseusernamepassword=samplepassword
+#
+#
+#any backup prefix to append to the backup file name
+cfg_backupfile_prefix="backup-"
+#
+#
+#
+#backup folder store destination path, must be exists and writable
+cfg_backup_dest="/path/to/backupfolder/"
+
+```
+
+
 You must specify the website content folder in *cfg_contents_folder* variable which may be (/home/user/public_html) for example. And if you want t create backup 
 of your mysql database you must keep *cfg_mysqldump* variable value to 1. else if you do not want to create a backup of any mysql database change the value of 
 the variable *cfg_mysqldump* to 0 and if you choose to backup mysql databse you have to specify the correct database information as *cfg_mysql_databasename* the 
