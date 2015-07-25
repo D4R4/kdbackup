@@ -51,3 +51,23 @@ database name, *cfg_mysql_databaseusername* as the database username and *cfg_my
 
 Also you can add prefix to the backup file name by specify any profix in the *cfg_backupfile_prefix* variable. finally you have to choose where to store the generated backup 
 file in the *cfg_backup_dest* variable.
+
+# Usage
+
+using kdbackup is simple, you just have to call the kdbackup.sh script after making sure from the content of the config file *cfgfile.cfg*.
+
+to make a new backup you just call the kdbackup.sh and speicify which config file you want to use
+
+```
+Example:
+$ /root/kdbackup/kdbackup.sh /root/kdbackup/cfgfile.cfg
+```
+
+You can use the kdbackup.sh in crontab to make sure the backup process can be done automaticlly.
+
+**Note that** kdbackup.sh must have the execution permission (755 permission) which is set by default , and if not set you can do it by running the command
+
+```
+$ chmod 755 ~/kdbackup/kdbackup.sh
+```
+
