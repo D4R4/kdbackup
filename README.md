@@ -16,11 +16,16 @@ Sometimes may be we are running our website in a linux server that did not have 
 Download the last version of kdbackup from github from the following link https://github.com/shannaq/kdbackup/archive/master.zip and unzip the file into the 
 location where you want to store the kdbackup files or by using the following commands after log in to SSH
 
-```$ cd ~```\
-```$ wget https://github.com/shannaq/kdbackup/archive/master.zip```\
-```$ unzip master.zip```\
-```$ mv kdbackup-master kdbackup```\
-```$ rm master.zip```\
+```$ cd ~```
+
+```$ wget https://github.com/shannaq/kdbackup/archive/master.zip```
+
+```$ unzip master.zip```
+
+```$ mv kdbackup-master kdbackup```
+
+```$ rm master.zip```
+
 ```$ cd kdbackup```
 
 If you do a list file command you can see 3 files which is: 
