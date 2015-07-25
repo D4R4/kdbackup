@@ -39,4 +39,15 @@ README.md
 
 **cfgfile.cfg**: is a sample config file that the kdbackup.sh used to create the backup file. the config fil contains the basic information that the script need.
 
-#Usage
+## cfgfile.cfg
+
+You must edit the config file **cfgfile.cfg** and change the varibales value to fit your website information **Please note** that this file is bash file and not 
+a real config file, so when changing variables values make sure to follow bash rules. NO space between var and val also no empty lines at the end of lines.
+
+You must specify the website content folder in *cfg_contents_folder* variable which may be (/home/user/public_html) for example. And if you want t create backup 
+of your mysql database you must keep *cfg_mysqldump* variable value to 1. else if you do not want to create a backup of any mysql database change the value of 
+the variable *cfg_mysqldump* to 0 and if you choose to backup mysql databse you have to specify the correct database information as *cfg_mysql_databasename* the 
+database name, *cfg_mysql_databaseusername* as the database username and *cfg_mysql_databaseusernamepassword* as the database user password.
+
+Also you can add prefix to the backup file name by specify any profix in the *cfg_backupfile_prefix* variable. finally you have to choose where to store the generated backup 
+file in the *cfg_backup_dest* variable.
