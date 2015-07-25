@@ -109,3 +109,9 @@ You can use the kdbackup.sh in crontab to make sure the backup process can be do
 $ chmod 755 ~/kdbackup/kdbackup.sh
 ```
 
+
+After running the kdbackup.sh you can find the generated backup file as compressed .tar.gz file in the *cfg_backup_dest* path. And the generted backup file will have a prefix name that set on *cfg_backupfile_prefix* variable followed by the data **(for example backup-25Jul2015.tar.gz )**
+
+**Hint**: If you are generating multiple backup for multiple websites you can create multiple config files and then execute the kdbackup.sh and specify the config file that you want to use and you can set the backup prefix to a name that let you know the website that related to this file
+
+
